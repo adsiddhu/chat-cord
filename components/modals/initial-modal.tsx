@@ -71,9 +71,9 @@ const InitialModal = () => {
     }
 
     return (
-        <div className="f-full h-full flex justify-items-center">
+        <div className="w-full h-screen relative ">
             <Dialog open>
-                <DialogContent className="bg-white text-black p-0 overflow-hidden">
+                <DialogContent className="bg-white text-black p-0 overflow-hidden custom-center">
                     <DialogHeader className="pt-8 px-6">
                         <DialogTitle className="text-2xl text-center font-bold">
                             Customize your server
@@ -119,7 +119,7 @@ const InitialModal = () => {
                                                     {...field}
                                                     disabled={isLoading}
                                                     placeholder="Enter server name"
-                                                    className="bg-zinc-300/50 border-0 text-black 
+                                                    className="bg-zinc-300/50 border-0 text-black
                                    focus-visible:ring-0 focus-visible:ring-offset-0"
                                                 />
                                             </FormControl>
@@ -130,7 +130,7 @@ const InitialModal = () => {
                                 />
                             </div>
 
-                            <DialogFooter className="bg-gray-100 px-6 py-4">
+                            <DialogFooter className="flex bg-gray-100 px-6 py-4">
                                 <Button type="submit" disabled={isLoading} variant="primary">
                                     Create
                                 </Button>
@@ -139,8 +139,7 @@ const InitialModal = () => {
                     </Form>
                 </DialogContent>
             </Dialog>
-        </div>
-
+        </div> 
     )
 }
 

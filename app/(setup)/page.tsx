@@ -1,3 +1,4 @@
+import React from "react";
 import { db } from "@/lib/db";
 import { initialProfile } from "@/lib/initail-profile";
 import { UserButton } from "@clerk/nextjs";

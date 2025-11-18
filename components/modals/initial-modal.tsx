@@ -130,16 +130,16 @@ const InitialModal = () => {
                                 />
                             </div>
 
-                            <DialogFooter className="flex bg-gray-100 px-6 py-4">
-                                <Button type="submit" disabled={isLoading} variant="primary">
-                                    Create
+                            <DialogFooter className="flex bg-gray-100 py-4">
+                                <Button type="submit" disabled={isLoading} variant="primary" className="min-w-full">
+                                    Create Server
                                 </Button>
                             </DialogFooter>
                         </form>
                     </Form>
                 </DialogContent>
             </Dialog>
-        </div> 
+        </div>
     )
 }
 

@@ -134,20 +134,3 @@ body,
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.NavigationSidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  color: var(--primary);
-  gap: 1rem;
-  background-color: transparent;
-}
-
-.dark .NavigationSidebar {
-  background-color: #1E1F22;
-}

@@ -42,6 +42,7 @@ const CreateServerModal = () => {
     const router = useRouter()
 
     const isModalOpen = isOpen && type === "createServer"
+    // const isModalOpen = true
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -58,6 +59,7 @@ const CreateServerModal = () => {
             await axios.post("/api/servers/", values)
             form.reset()
             router.refresh()
+            onClose()
         } catch (error) {
             console.log(error);
         }
@@ -69,7 +71,7 @@ const CreateServerModal = () => {
     }
 
     return (
-        <div className="w-full h-screen relative ">
+        <div className="w-full h-screen relative">
             <Dialog open={isModalOpen} onOpenChange={handelClose}>
                 <DialogContent className="bg-white text-black p-0 overflow-hidden custom-center">
                     <DialogHeader className="pt-8 px-6">
@@ -137,7 +139,7 @@ const CreateServerModal = () => {
                     </Form>
                 </DialogContent>
             </Dialog>
-        </div>
+         </div>
     )
 }
 

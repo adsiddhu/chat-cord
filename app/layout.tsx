@@ -29,7 +29,6 @@ export default function RootLayout({
             defaultTheme="dark"
             enableSystem={false}
             storageKey="discord-theme">
-            <ModalProvider/>
             {children}
           </ThemeProvider>
         </body>

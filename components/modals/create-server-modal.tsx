@@ -42,7 +42,6 @@ const CreateServerModal = () => {
     const router = useRouter()
 
     const isModalOpen = isOpen && type === "createServer"
-    // const isModalOpen = true
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -71,7 +70,6 @@ const CreateServerModal = () => {
     }
 
     return (
-        <div className="w-full h-screen relative">
             <Dialog open={isModalOpen} onOpenChange={handelClose}>
                 <DialogContent className="bg-white text-black p-0 overflow-hidden custom-center">
                     <DialogHeader className="pt-8 px-6">
@@ -114,12 +112,12 @@ const CreateServerModal = () => {
                                                 Server Name
                                             </FormLabel>
 
-                                            <FormControl>
+                                            <FormControl style={{ background:"#EEEEEE"}}>
                                                 <Input
                                                     {...field}
                                                     disabled={isLoading}
                                                     placeholder="Enter server name"
-                                                    className="bg-zinc-300/50 border-0 text-black
+                                                    className="border-0 text-black
                                    focus-visible:ring-0 focus-visible:ring-offset-0"
                                                 />
                                             </FormControl>
@@ -139,7 +137,6 @@ const CreateServerModal = () => {
                     </Form>
                 </DialogContent>
             </Dialog>
-         </div>
     )
 }
 

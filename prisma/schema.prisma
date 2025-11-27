@@ -75,7 +75,6 @@ model Channel {
   id String @id @default(uuid())
   name String
   type ChannelType @default(TEXT)
-  // role ChannelType @default(TEXT)
 
   profileId String
   profile Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)

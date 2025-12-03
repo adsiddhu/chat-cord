@@ -1,0 +1,6 @@
+- [ ] Update app/(invite)/(routes)/(invite)/[inviteCode]/page.tsx to handle server joining via invite code
+  - [ ] Query server by inviteCode
+  - [ ] If server not found, redirect to home
+  - [ ] Check if profile is already a member
+  - [ ] If not, create new Member with GUEST role
+  - [ ] Redirect to /servers/[serverId]

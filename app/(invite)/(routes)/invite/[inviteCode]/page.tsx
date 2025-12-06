@@ -8,7 +8,13 @@ interface InviteCodePageProps {
     };
 }
 
-const InviteCodePage = async ({ params }: InviteCodePageProps) => {
+// const InviteCodePage = async ({ params }: InviteCodePageProps) => {
+    const InviteCodePage = async ({ params: paramsPromise }: { params: Promise<{ inviteCode: string }> }) => {
+        const params = await paramsPromise;
+        console.log("dafjdkfjdkjfkdjf");
+
+    console.log(params.inviteCode);
+// };
     const profile = await currentProfile();
 
     if (!profile) {

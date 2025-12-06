@@ -38,4 +38,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # command  
 **when we have to do any change in database file then run below cmd to sync to data to db**
 - npx prisma generate
-- npx prisma dp push
+- npx prisma dp pushit 

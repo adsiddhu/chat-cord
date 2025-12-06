@@ -8,7 +8,6 @@ export async function PATCH(
     context: { params: { serverId: string } }
 ) {
     try {
-
         const params = await Promise.resolve(context.params);
 
         const { serverId } = params;

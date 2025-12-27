@@ -1,11 +1,11 @@
-# Ignore node packages
+# Ignore node dependencies
 /node_modules
 
 # Ignore yarn pnp files
 /.pnp
 .pnp.*
 
-# Ignore yarn files
+# Ignore yarn cache files
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
@@ -15,14 +15,14 @@
 # Ignore test coverage
 /coverage
 
-# Ignore Next.js build
+# Ignore Next.js build files
 /.next/
 /out/
 
 # Ignore production build
 /build
 
-# Ignore macOS files
+# Ignore macOS system files
 .DS_Store
 
 # Ignore private key files
@@ -41,11 +41,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Ignore Prisma generated files
+# Ignore Prisma generated client
 /lib/generated/prisma
 
-# Ignore Clerk config
-/clerk/
+# 🔒 Ignore Clerk files (WILL NOT PUSH)
+clerk/
+.clerk/
 
 # Ignore environment variables
 .env
